@@ -7,6 +7,11 @@
 </head>
 <body>
     <h1>Типы даных в PHP</h1>
+    <p><b>Типы даных</b> в PHP делятся на несколько типов, скалярные, смешанные, специальные.<br>
+    <b>Скалярные типы</b> - boolean, integer, float, string.<br>
+    <b>Смешанные</b> - object, array, callable, iterable. <br> 
+    <b>Cпециальные</b> - resource, NULL <br>
+    </p>
     <hr>
     <?php 
     $int_type = 1;
