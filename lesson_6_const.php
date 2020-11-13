@@ -29,6 +29,7 @@
 
 
     localScope();
+    var_dump(localScope());
     ?>
 </body>
 </html>
