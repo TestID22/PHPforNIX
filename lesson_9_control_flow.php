@@ -69,6 +69,12 @@
         foreach($arr_name as &$value){
             echo $value .= " <b>cтрока добавленная из цикла foreach</b><br>";
         }
+        //Пройти по массиву, и получить все значения или ключи можно при помощи полшебных переменных $key, $value
+        $languages = ["c#"=> "ASP.NEt", "java"=>"SPRING", "python"=>"django"];
+        
+        foreach($languages as $key => $value){
+            echo $key . "<br>";
+        }
 
 
     ?>
