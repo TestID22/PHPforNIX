@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #353836;
+}
+/* Тут навигация */
+
+a, li{
+    color: white;
+    text-decoration: none;
+}
+
+header{
+    margin: 0px 150px;
+    padding: 30px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1{
+    color:rgb(176, 252, 0);
+    border-bottom:2px solid #181515;
+    cursor: pointer;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links :hover{
+    border-bottom: 3px solid rgb(176, 252, 0);
+}
+
+.nav__links li{
+    display: inline-block;
+}
+
+
+/* Forms css*/
+.coders{
+    color:#353836;
+}
+
+.box{
+    width: 500px;
+    padding: 20px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border: 1px solid #006d1b;
+    background-color: #181515 ;
+    border-radius: 10px;
+}
+
+.box h1{
+    color: rgb(0, 255, 98);
+    text-transform: uppercase;
+    margin-top: 0px;
+}
+
+.box input[type="text"]{
+    border:0;
+    background: none;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 35px;
+    border: 3px solid rgb(176, 252, 0);
+    text-align: center;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+
+.box input[type = "text"]:focus{
+    width : 250px;
+    border-color : rgb(51, 255, 78);
+}
+
+.box button[type = "submit"]{
+    width: 100px;
+    height: 35px;
+    background: none;
+    border: 2px solid rgb(0, 255, 55);
+    color : rgb(255, 255, 255);
+    border-radius: 24px;
+}
+
+.box button[type = "submit"]:hover{
+    background-color: rgb(9, 255, 0);
+    color: #181515;
+    font: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
