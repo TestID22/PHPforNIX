@@ -1,27 +1,33 @@
 body{
     margin: 0;
     padding: 0;
-    background: #353836;
+    background:#232324;
 }
-/* Тут навигация */
 
+/*------------------------- header------------------------------*/
 a, li{
     color: white;
     text-decoration: none;
 }
 
 header{
-    margin: 0px 150px;
-    padding: 30px 15px;
+    margin: 0px 0px;
+    padding-top: 0px;
+    padding-left: 5%;
+    padding-right: 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #181515;
+    
 }
 
-header h1{
+.logo{
     color:rgb(176, 252, 0);
     border-bottom:2px solid #181515;
     cursor: pointer;
+    margin: 0px;
+    padding: 0;
 }
 
 .nav__links {
@@ -29,17 +35,39 @@ header h1{
 }
 
 .nav__links :hover{
-    border-bottom: 3px solid rgb(176, 252, 0);
+    color: rgb(176, 252, 0);
 }
 
 .nav__links li{
     display: inline-block;
+    padding-left: 15px;
+    
+}
+
+/* -------------------- NIX space ----------------------*/
+.nix__box{
+    color:whitesmoke;
+    display: flex;
+    justify-content: center
+}
+
+.nix__logo{
+    margin-top: 45px;
+}
+.nix__green_logo{
+    color: rgb(176, 252, 0);
+}
+
+.github__pict{
+    margin-top: 15px;
+    padding-left: 15px;
+    cursor: pointer;
 }
 
 
-/* Forms css*/
+/* --------------------------Form --------------------------------*/
 .coders{
-    color:#353836;
+    color:(176, 252, 0);
 }
 
 .box{
@@ -48,6 +76,7 @@ header h1{
     position: absolute;
     top: 30%;
     left: 50%;
+    margin-top: 30px;
     transform: translate(-50%, -50%);
     text-align: center;
     border: 1px solid #006d1b;
@@ -56,7 +85,7 @@ header h1{
 }
 
 .box h1{
-    color: rgb(0, 255, 98);
+    color: #878d87;
     text-transform: uppercase;
     margin-top: 0px;
 }
@@ -79,22 +108,34 @@ header h1{
 
 .box input[type = "text"]:focus{
     width : 250px;
-    border-color : rgb(51, 255, 78);
+    border-color : rgb(255, 243, 70);
 }
 
 .box button[type = "submit"]{
     width: 100px;
     height: 35px;
     background: none;
-    border: 2px solid rgb(0, 255, 55);
+    border: 2px solid rgb(176, 252, 0);
     color : rgb(255, 255, 255);
     border-radius: 24px;
 }
 
 .box button[type = "submit"]:hover{
-    background-color: rgb(9, 255, 0);
+    background-color: rgb(176, 252, 0);
     color: #181515;
     font: bold;
     text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+/*-------------------footer---------------------*/
+footer{
+    position: absolute;
+    top:85%;
+    left:50%;
+}
+
+footer img{
     cursor: pointer;
 }
