@@ -13,13 +13,11 @@ a, li{
 header{
     margin: 0px 0px;
     padding-top: 0px;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 0px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #181515;
-    
 }
 
 .logo{
