@@ -31,7 +31,7 @@
             <a href="https://github.com/septemberEatMe"><img src="img/Octocat.png" width= "70" alt="github__link" title="Мой GitHub"></a>
         </div>
     </div>
-    <!--Тут основной контент-->
+    <!--Тут контент Формы контент-->
     <main>
         <form class="box" action="php/add.php" method="POST">
             <h1>ZOMBIE <span class="coders">CODERS</span> Tasks</h1>
@@ -39,6 +39,18 @@
             <button type="submit" name = "sendTask">send</button>
         </form>
     </main>
+
+    <?php
+        require 'php/configDB.php';
+
+        echo '<ul>';
+        $query = $pdo->query('SELECT * FROM "zombie_tasks"');
+        //TODO ERRRRROOORRR
+        while($row = $query->fetch(PDO::FETCH_OBJ)){
+            echo "$row<br>";
+        }
+        echo '</ul>';
+    ?>
 
     <footer>
 
