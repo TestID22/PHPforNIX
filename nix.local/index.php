@@ -42,14 +42,8 @@
 
     <?php
         require 'php/configDB.php';
-
-        echo '<ul>';
-        $query = $pdo->query('SELECT * FROM "zombie_tasks"');
-        //TODO ERRRRROOORRR
-        while($row = $query->fetch(PDO::FETCH_OBJ)){
-            echo "$row<br>";
-        }
-        echo '</ul>';
+        
+    
     ?>
 
     <footer>

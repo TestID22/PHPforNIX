@@ -11,9 +11,9 @@
     //работа с БД
     require 'configDB.php';
 
-    $sql = 'INSERT INTO zombie_tasks(task) VALUES(:task)';
-    $query = $pdo->prepare($sql); //подготовка запроса, этот код не вызывается
-    $query->execute(['task' => $task]);
+    $sql = "INSERT INTO zombie_tasks(task) VALUES ('$task')";
+    $result = mysqli_query($connection, $sql);
+
 
     header('Location: /dashboard/nix.local/'); //перенаправление redirect
     
