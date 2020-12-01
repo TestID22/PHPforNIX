@@ -64,8 +64,10 @@ header{
 
 
 /* --------------------------Form --------------------------------*/
+main{
+}
 .coders{
-    color:(176, 252, 0);
+    color:rgb(176, 252, 0);
 }
 
 .box{
@@ -125,6 +127,11 @@ header{
     text-transform: uppercase;
     cursor: pointer;
 }
+.revers{
+    position: relative;
+    margin: 100px;
+}
+
 
 
 /*-------------------footer---------------------*/

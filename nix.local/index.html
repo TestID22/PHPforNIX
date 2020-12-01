@@ -38,13 +38,16 @@
             <input type="text" name="task" id = 'task' placeholder="enter yours tasks here..."><br>
             <button type="submit" name = "sendTask">send</button>
         </form>
+
     </main>
 
-    <?php
-        require 'php/configDB.php';
-        
-    
-    ?>
+    <div class="revers">
+        <form class="box_reverse" action="pages/reversestring.php" method="POST">
+            <h1>Reverser for yours string</h1>
+            <input type="reverse" name="reverse" id = 'reverse' placeholder="enter yours string here..."><br>
+            <button type="submit" name = "sendTask">send</button>
+        </form>
+    </div>
 
     <footer>
 
