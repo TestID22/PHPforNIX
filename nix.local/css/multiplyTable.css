@@ -2,13 +2,47 @@
     padding: 0;
     margin: 0;
 }
+.body{
+    background: #232324;
+}
 
+.nav__multiply{
+    height: 100px;
+    background: #181515;
+}
+
+.nav__multiply a{
+    color: #ffffff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 3px solid rgb(176, 252, 0);
+    border-radius: 25px;
+}
+
+.nav__multiply a:hover{
+    background: rgb(176, 252, 0);
+    padding: 5px 20px;
+    font-weight: bold;
+    color: #181515;
+}
+
+.back__btn{
+    padding-top: 25px;
+    padding-left: 100px;
+}
+/*------------------------- Table block  -----------------------------------*/
 table{
-     border-collapse:collapse;
+    border: 2px solid rgb(0,0,0);
+    border-collapse:collapse;
 }
 
 .m__table{
     position: absolute;
-    top:10%;
+    top:20%;
     left: 10%;
+    background: white;
 }
+.m__table td{
+    padding: 10px;
+}
+

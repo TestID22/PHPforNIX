@@ -8,22 +8,45 @@
     <link rel="stylesheet" href="../css/multiplyTable.css">
     <title>Multi table</title>
 </head>
-<body>
+<body class="body">
+
+<nav class="nav__multiply">
+    <div class="back__btn">
+        <a href="../index.html">BACK</a>
+    </div>
+</nav>
+
 <div class="m__table">
-    <table border="1">
-     <?php
-            $rows = 10;
-            $cols = 5;
-                for($tr = 1; $tr <= $rows;$tr++) {
-                    echo "\t\t<tr>\n";
-                    for($td = 1; $td <= $cols;$td++){
-                        echo "\t\t<td>{$td} x {$tr} = ".$td * $tr ."</td>\n";
-                    }
-                    echo "</tr>\n";
-                }
-    ?>
+    <table border="2">
+        <tr>
+            <td><?php showMultyTable(1);?></td>
+            <td><?php showMultyTable(2);?></td>
+            <td><?php showMultyTable(3);?></td>
+            <td><?php showMultyTable(4);?></td>
+            <td><?php showMultyTable(5);?></td>
+        </tr>
+        <tr>
+            <td><?php showMultyTable(6);?></td>
+            <td><?php showMultyTable(7);?></td>
+            <td><?php showMultyTable(8);?></td>
+            <td><?php showMultyTable(9);?></td>
+            <td><?php showMultyTable(10);?></td>
+        </tr>
+
+
+    </table>
 </div>
 
-</table>
+
+
+<?php
+    function showMultyTable($multuplier){
+    for($i = 1;$i <= 10;$i++){
+        echo "$multuplier x $i = ". $multuplier * $i ."<br>";
+    }
+}
+
+?>
+
 </body>
 </html>
