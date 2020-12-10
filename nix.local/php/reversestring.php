@@ -8,8 +8,27 @@
     <link rel="stylesheet" href="/css/style.css">
     <title>Reverse My String</title>
 </head>
-<body>
+<style>
+    .links {
+        color: rgb(176, 252, 0);
+        display: inline-block;
+        padding: 10px 15px;
+        margin-bottom: 25px;
+        margin-top:15px;
+        text-transform: uppercase;
+        border: 2px solid rgb(176,252,0);
+        border-radius: 26px;
+        font-weight: bold;
+    }
+    .links:hover{
+        background: rgb(156,252,0);
+        color: #181515;
+        font-weight: bold;
+    }
 
+</style>
+<body style="text-align: center;">
+    <a class="links" href="../index.html">back</a><br>
 
 
 <?php
@@ -18,8 +37,8 @@
     echo "Введите строку для переворота<br>";
     var_dump($dataString);
     }
-    echo  strrev($dataString). "<br>";
-    echo "<hr>";
+    echo  "<text style='color: whitesmoke;'>" .strrev($dataString). "</text><br>";
+    echo "<hr><text style='color: cornsilk'> Тут самописные переворотчик строки ака (реверсер)</text><br>";
     echo customReverseString($dataString);
 
 
@@ -28,7 +47,7 @@
     function customReverseString($str){
     $reversString = $str;
     for($i = strlen($str) - 1; $i >= 0;$i--){
-        echo  $reversString[$i];
+        echo  "<text style='color: rgb(176, 252, 0)'>" . $reversString[$i] . "</text>";
     }
 }
 

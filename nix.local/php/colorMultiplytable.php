@@ -41,11 +41,21 @@
 
 <?php
     function showMultyTable($multuplier){
-        $colored = array(1 => "red", "green", "blue", "yellow", "aqua","brown", "darkblue","pink", "tomato", "violet");
-    for($i = 1;$i <= count($colored);$i++){
-        echo "<text style='color:$colored[$i];'>$i</text> x <text style='color: $colored[$multuplier]'>$multuplier</text><br>";
+    for($i = 1;$i <= 10;$i++){
+        //if(){
+
+        //}else
+        colorized($multuplier, $i);
     }
-}
+    }
+
+
+    function colorized($multiplier, $index){
+        $colored = array(1 => "red", "green", "blue", "yellow", "aqua","brown", "darkblue","pink", "tomato", "violet");
+        echo "<text style='color:$colored[$multiplier];'>$multiplier</text> x 
+              <text style='color: $colored[$index]'>$index</text> = ".
+              $multiplier * $index ."<br>";
+    }
 
 ?>
 

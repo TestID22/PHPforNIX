@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    padding: 0;
+    background:#232324;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: aqua;
+    font-weight: 26px;
+}
+
+.reverse__box{
+    width: 500px;
+    padding: 20px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-top: 30px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border: 1px solid #006d1b;
+    background-color: #181515 ;
+    border-radius: 10px;
+    color: rgb(176, 252, 0);;
+}
+.reverse__box h1{
+    padding: 0px;
+    margin: 0px;
+}
+.reverse__box input[type = 'text']{
+    background: none;
+    height: 35px;
+    border: 2px solid rgb(176, 252, 0);
+    border-radius: 24px;
+    color:white;
+    text-align: center;
+}
+.reverse__box button{
+    background: none;
+    height: 35px;
+    width: 170px;
+    border: 2px solid rgb(176, 252, 0);
+    border-radius: 24px;
+    color: white;
+    margin-top: 10px;
+}
+
+.reverse__box button:hover{
+    background:rgb(176, 252, 0);
+    color:#181515;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
