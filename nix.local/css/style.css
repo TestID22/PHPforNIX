@@ -45,12 +45,10 @@ header{
 /* -------------------- NIX space ----------------------*/
 .nix__box{
     color:whitesmoke;
-    display: flex;
-    justify-content: center;
 }
 
 .nix__logo{
-    margin-top: 45px;
+    margin-top: 15px;
 }
 .nix__green_logo{
     color: rgb(176, 252, 0);
@@ -72,13 +70,14 @@ header{
 .box{
     width: 500px;
     padding: 20px;
-    position: absolute;
+    display: inline-block;
+    position: center;
     top: 30%;
     left: 50%;
     margin-top: 30px;
     transform: translate(-50%, -50%);
     text-align: center;
-    border: 1px solid #006d1b;
+    border: 2px solid #006d1b;
     background-color: #181515 ;
     border-radius: 10px;
 }
@@ -131,53 +130,10 @@ header{
 footer{
     position: absolute;
     top:85%;
-    left:50%;
+    right:80%;
 }
 
 footer img{
     cursor: pointer;
-}
-
-.reverse__box{
-    width: 500px;
-    padding: 20px;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    margin-top: 30px;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    border: 1px solid #006d1b;
-    background-color: #181515 ;
-    border-radius: 10px;
-    color: rgb(176, 252, 0);;
-}
-.reverse__box h1{
-    padding: 0px;
-    margin: 0px;
-}
-.reverse__box input[type = 'text']{
-    background: none;
-    height: 35px;
-    border: 2px solid rgb(176, 252, 0);
-    border-radius: 24px;
-    color:white;
-    text-align: center;
-}
-.reverse__box button{
-    background: none;
-    height: 35px;
-    width: 170px;
-    border: 2px solid rgb(176, 252, 0);
-    border-radius: 24px;
-    color: white;
-    margin-top: 10px;
-}
-
-.reverse__box button:hover{
-    background:rgb(176, 252, 0);
-    color:#181515;
-    text-transform: uppercase;
-    font-weight: bold;
 }
 
