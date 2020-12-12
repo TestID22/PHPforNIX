@@ -128,8 +128,10 @@ header{
 /*-------------------footer---------------------*/
 footer{
     position: absolute;
+    display: block;
     top:85%;
     right:15%;
+    margin-bottom: 10px;
 }
 
 footer img{

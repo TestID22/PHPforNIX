@@ -32,7 +32,6 @@
             <td><?php showMultyTable(9);?></td>
             <td><?php showMultyTable(10);?></td>
         </tr>
-        <text style="color: "
 
     </table>
 </div>
@@ -42,20 +41,26 @@
 <?php
     function showMultyTable($multuplier){
     for($i = 1;$i <= 10;$i++){
-        //if(){
-
-        //}else
         colorized($multuplier, $i);
+        }
     }
-    }
-
 
     function colorized($multiplier, $index){
         $colored = array(1 => "red", "green", "blue", "yellow", "aqua","brown", "darkblue","pink", "tomato", "violet");
         echo "<text style='color:$colored[$multiplier];'>$multiplier</text> x 
-              <text style='color: $colored[$index]'>$index</text> = ".
-              $multiplier * $index ."<br>";
+              <text style='color: $colored[$index]'>$index</text> = ";
+        echo  colorizedResult($multiplier,$index) . "<br>";
     }
+
+    function colorizedResult($multiplier, $index){
+        $colors = array("lime", "red", "green", "blue", "yellow", "aqua","brown", "darkblue","pink", "tomato", "violet");
+        $result = strval($multiplier * $index); //преобразование к строке
+        for($i = 0; $i < strlen($result); $i++){
+            $number_of_color = $result[$i];
+            echo "<text style='color:$colors[$number_of_color];'>" .$result[$i]. "</text>";
+        }
+    }
+
 
 ?>
 

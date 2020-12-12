@@ -6,25 +6,6 @@
     background: #232324;
 }
 
-.nav__multiply{
-    height: 100px;
-    background: #181515;
-}
-
-.nav__multiply a{
-    color: #ffffff;
-    padding: 5px 10px;
-    text-decoration: none;
-    border: 3px solid rgb(176, 252, 0);
-    border-radius: 25px;
-}
-
-.nav__multiply a:hover{
-    background: rgb(176, 252, 0);
-    padding: 5px 20px;
-    font-weight: bold;
-    color: #181515;
-}
 
 .back__btn{
     padding-top: 25px;
