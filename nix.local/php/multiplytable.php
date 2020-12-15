@@ -10,11 +10,18 @@
 </head>
 <body class="body">
 
-<nav class="nav__multiply">
-    <div class="back__btn">
-        <a href="../index.html">BACK</a>
-    </div>
-</nav>
+<div class="back__btn">
+    <a   style="display: inline-block;
+         padding: 10px 15px;
+         border: 2px solid rgb(176,252,0);
+         border-radius: 25px;
+         margin-top: 10px;
+         text-decoration: none;
+         color: rgb(176,252,0);
+         font-size: 16px;
+         font-weight: bold;"
+       href="../index.html">BACK</a>
+</div>
 
 <div class="m__table">
     <table border="2">
