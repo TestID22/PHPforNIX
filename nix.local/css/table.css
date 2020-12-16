@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    background: #232324;
+}
+table{
+    color: white;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.back__btn{
+    margin: 0px 100px;
+    padding-top: 15px;
+}
+.back__btn a{
+    display: inline-block;
+    padding: 10px 15px;
+    border: 2px solid rgb(176,252,0);
+    border-radius: 25px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: rgb(176,252,0);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.back__btn a:hover{
+    color:black;
+    background: rgb(176, 252,0);
+    font-weight: bold;
+}
